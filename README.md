@@ -2,6 +2,8 @@
 
 This tool requires Python to function. You can download it here: https://www.python.org/downloads/
 
+I cannot verify if this tool works for gamepass subscribers, I have only tested it for the Steam version of the game.
+
 Locate your main Steam directory, this will typically be located in `Program Files (x86)`.
 
 Navigate to this folder within the directory: `Steam/userdata/<UserID>/1240440/remote/<ID>/Save`. This is where you will find the `progress2.cb2` file. It is your save file, and what we will be copying, and overwriting with this tool.
