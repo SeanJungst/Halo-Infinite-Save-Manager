@@ -113,6 +113,7 @@ def CreateWidgets():
 	destinationLabel = Label(root, text ="Created by @RealJadeBarker")
 	destinationLabel.grid(row = 11, column = 0,
 						pady = 5, padx = 5)
+
 def InitialDirectory():
 	return ".SaveDirectory/initialDirectory.txt"
 
