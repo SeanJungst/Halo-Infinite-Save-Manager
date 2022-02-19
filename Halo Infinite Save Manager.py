@@ -113,17 +113,19 @@ def CreateWidgets():
 	destinationLabel = Label(root, text ="Created by @RealJadeBarker")
 	destinationLabel.grid(row = 11, column = 0,
 						pady = 5, padx = 5)
+def InitialDirectory():
+	return ".SaveDirectory/initialDirectory.txt"
 
 def ReadDestinationLocation():
-	if exists(".SaveDirectory/initialDirectory.txt"):
-		with open(".SaveDirectory/initialDirectory.txt", 'r') as file:
+	if exists(InitialDirectory()):
+		with open(InitialDirectory(), 'r') as file:
 			init_dir = ""
 			for line in file:
 				init_dir = line
 			destinationLocation.set(init_dir)	
 
 def WriteDestinationLocation(destinationdirectory):
-	with open(".SaveDirectory/initialDirectory.txt", 'w') as file:
+	with open(InitialDirectory(), 'w') as file:
 		file.write(destinationdirectory)
 
 def DestinationBrowse():
